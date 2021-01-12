@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: hsl(229, 57%, 11%);
+    background-image: url("assets/bg-desktop.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
+}
+.grid{
+    width:70%;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+}
+
+.right{
+    width: 33%;
+    background-color: hsl(228, 56%, 26%);
+    margin-right: 30px;
+    height: 200px;
+    border-radius: 10px;
+    border-top-right-radius: 40% ;
+}
+
+.icons{
+    display: flex;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.icon{
+    background-color:hsl(229, 57%, 11%);
+    padding:15px 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+
+}
+.icon > img{
+    width: 25px;
+    height: 20px;
+}
+.logo{
+    margin-top: 35px;
+    margin-left: 40px;
+}
+.left{
+    width: 66%;
+    background-color: hsl(228, 56%, 26%);
+    height: 150px;
+    margin-top: 50px;
+    border-radius: 10px;
+  
+}
+.gb_left_container {
+	position: relative;
+    background: white;
+    border-radius: 10px;
+    bottom: 30%;
+    left: 60%;
+    z-index: 10;
+    width: 30%;
+	height: 53%;
+}
+.gb_left_container:after {
+	content: '';
+	position: absolute;
+	bottom: -40%;
+	left: 72%;
+	width: 0;
+	height: 0;
+	border: 55px solid transparent;
+	border-top-color: white;
+	border-bottom: 0;
+    border-right: 0;
+
+
+}
+.gb_left{
+    color: hsl(228, 56%, 26%);
+    position: absolute;
+	bottom: 38%;
+    left: 50%;
+    text-transform: uppercase;
+
+}
+.gb_left > span{
+    position: absolute;
+	bottom: -50%;
+    right: 120%;
+    font-size: 48px;
+}
+span{
+    font-weight: bold;
+}
+.left_container{
+    width: 80%;
+    margin: -40px 0 0 40px;
+}
+.usage{
+    margin-bottom: 20px;
+}
+.progress-bar{
+    height: 15px;
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+.progress{
+    height: 10px;
+    width: 75%;
+    background: linear-gradient(to left, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    border-radius: 10px;
+    padding: 1px 2px 0 0;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.dot{
+    height: 9px;
+    width: 9px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+.gb{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}

@@ -3,20 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;1,200&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css" />
+
   <title>Fylo data storage component</title>
 </head>
-
 <body>
-
-  You’ve used 815 GB of your storage
-
-  185 GB Left
-  
-  0 GB
-  1000 GB
-  
+  <div class = "grid">
+    <div class="right">
+      <div class="right_container">
+        <div class="logo"><img src="./assets/logo.svg" alt="logo"></div>
+        <div class="icons">
+          <div class="icon"> <img src="./assets/icon-document.svg" alt="document"></div>
+          <div class="icon"> <img src="./assets/icon-folder.svg" alt="folder"></div>
+          <div class="icon"> <img src="./assets/icon-upload.svg" alt="upload"></div>
+        </div>
+      </div>
+    </div>
+    <div class="left">
+      <div class="gb_left_container">
+        <div class="gb_left"><span>185</span> GB Left</div>
+      </div>
+      <div class="left_container">
+        <div class="usage">You’ve used <span>815 GB</span>  of your storage</div>
+        <div class="progress-bar">
+          <div class="progress">
+            <div class="dot"></div>
+          </div>
+        </div>
+        <div class="gb">
+          <div class="gb_min">0 GB</div>
+          <div class="gb_max">1000 GB</div>
+        </div>
+      </div>
+    </div>
+  </div> 
 </body>
 </html>
