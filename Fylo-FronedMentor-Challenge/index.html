@@ -16,18 +16,20 @@
       <div class="right_container">
         <div class="logo"><img src="./assets/logo.svg" alt="logo"></div>
         <div class="icons">
-          <div class="icon"> <img src="./assets/icon-document.svg" alt="document"></div>
-          <div class="icon"> <img src="./assets/icon-folder.svg" alt="folder"></div>
-          <div class="icon"> <img src="./assets/icon-upload.svg" alt="upload"></div>
+          <div class="icon icon--document"> <img src="./assets/icon-document.svg" alt="document"></div>
+          <div class="icon icon--folder"> <img src="./assets/icon-folder.svg" alt="folder"></div>
+          <label class="icon icon--upload"> 
+              <input class="upload" type="file" accept=".jpg,.png,.jpeg"/> 
+          </label>
         </div>
       </div>
     </div>
     <div class="left">
       <div class="gb_left_container">
-        <div class="gb_left"><span>185</span> GB Left</div>
+        <div class="gb_left"><span class="storageLefts">185</span> GB Left</div>
       </div>
       <div class="left_container">
-        <div class="usage">You’ve used <span>815 GB</span>  of your storage</div>
+        <div class="usage">You’ve used <span class = "storageUsed">815</span> GB  of your storage</div>
         <div class="progress-bar">
           <div class="progress">
             <div class="dot"></div>
@@ -40,5 +42,6 @@
       </div>
     </div>
   </div> 
+  <script src="script.js"></script>
 </body>
 </html>
